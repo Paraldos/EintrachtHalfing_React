@@ -1,5 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color_text);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
 }
 
 html {
@@ -8,4 +14,21 @@ html {
 
 body {
   margin: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+
+:root {
+  --navbar_darkBg: #1c6758;
+  --navbar_lightBg: #3d8361;
+  --navbar_text: #f2f2f2;
+  --navbar_accent: #d6cda4;
+  --navbar_height: 3rem;
+  --navbar_border: 5px;
+  --color_text: #090909;
+  --color_background_light: #dfdac6;
+  --color_background_dark: #71af91;
 }
