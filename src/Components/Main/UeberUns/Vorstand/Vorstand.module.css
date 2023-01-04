@@ -1,0 +1,8 @@
+.vorstand ul {
+    list-style: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+}
