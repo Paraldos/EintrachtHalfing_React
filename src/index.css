@@ -1,29 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--color_text);
+  color: var(--c5);
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-size: 20px;
 }
 
 :root {
-  --navbar_darkBg: #1c6758;
-  --navbar_lightBg: #3d8361;
-  --navbar_text: #f2f2f2;
-  --navbar_accent: #d6cda4;
+  --c1: #1c6758;
+  --c2: #3d8361;
+  --c3: #f2f2f2;
+  --c4: #d6cda4;
+  --c5: #090909;
+
   --navbar_height: 3rem;
   --navbar_border: 5px;
-  --color_text: #090909;
-  --color_background_light: #dfdac6;
-  --color_background_dark: #71af91;
 
+  /*
+    --color_text: #090909;
+    --color_background_light: #dfdac6;
+    --color_background_dark: #71af91;
+
+    --navbar_darkBg: #1c6758;
+    --navbar_lightBg: #3d8361;
+    --navbar_text: #f2f2f2;
+    --navbar_accent: #d6cda4;
+  */
 }
 
 html {
@@ -52,15 +60,7 @@ h3 {
 }
 
 #root {
-  background: linear-gradient(
-    to right top,
-    var(--color_background_light),
-    var(--color_background_dark)
-  );
-}
-
-a:hover {
-  cursor: pointer;
+  background: linear-gradient(to right top, #dfdac6, #71af91);
 }
 
 ::-webkit-scrollbar {
