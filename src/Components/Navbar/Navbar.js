@@ -1,16 +1,20 @@
-import React from "react";
-import styles from "./Navbar.module.css";
+import React, { useState } from "react";
+import "./Navbar.css";
 
 export default function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const onClickHandler = () => setIsActive(!isActive);
+
   return (
-    <nav className={styles.Nav}>
-      <div className={styles.nav__menuBtn}>
-        <i class="menu_btn_symbol fa-regular fa-circle-right"></i>
-      </div>
-      <a href="./index.html#landing" className={styles.nav__logo}>
+    <nav className={isActive ? "Nav__Open" : ""}>
+      <button className="nav__menuBtn" onClick={onClickHandler}>
+        <i className="fa-regular fa-circle-right"></i>
+      </button>
+      <a href="#" className="nav__logo">
         SG Eintracht Halfing E.V.
       </a>
-      <ul className={styles.nav__links}>
+      <ul className="nav__ul">
         <li>
           <button>Über Uns</button>
         </li>

@@ -1,0 +1,58 @@
+p,
+h2,
+h3,
+h4 {
+  padding: 0.5rem 0;
+}
+
+p {
+  padding-left: 0.7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* main */
+main {
+  max-width: 800px;
+  height: 100%;
+  margin: auto;
+}
+
+/* section */
+section {
+  padding: 0.5rem;
+  padding-top: var(--navbar_height);
+}
+
+section:last-child() {
+  border: none;
+}
+
+@media (max-width: 680px) {
+  section {
+    padding: 1rem;
+    padding-top: var(--navbar_height);
+  }
+}
+
+/* article */
+article {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: var(--navbar_border) solid #00000025;
+}
+
+article:last-child {
+  border: none;
+}
+
+#root {
+  background: linear-gradient(to right top, #dfdac6, #71af91);
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../UI/Image/Image";
+import Image from "../../UI/Image";
 import Wanderpokal from "./wanderpokal_small.jpg";
 
 export default function () {
