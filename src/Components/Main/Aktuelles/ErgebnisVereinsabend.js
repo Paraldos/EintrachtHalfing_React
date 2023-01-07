@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "../../../UI/Image";
+
+import Image from "../../UI/Image";
 import Ergebnis01 from "./Ergebnis01.jpeg";
 import Ergebnis02 from "./Ergebnis02.jpeg";
 import Ergebnis03 from "./Ergebnis03.jpeg";

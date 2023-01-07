@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./Impressum.module.css";
+import "./Impressum.css";
 
 export default function () {
   return (
-    <section className={styles.Impressum}>
+    <section className="impressum">
       <h2>Impressum</h2>
 
       <article>

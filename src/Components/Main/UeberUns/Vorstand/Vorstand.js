@@ -1,8 +1,9 @@
 import React from "react";
+import "./Vorstand.css";
+
 import VorstandSmall from "./VorstandSmall.jpg";
 import Image from "../../../UI/Image";
 import VorstandLi from "./VorstandLi";
-import styles from "./Vorstand.module.css";
 
 export default function () {
   const VORSTAND = [
@@ -21,7 +22,7 @@ export default function () {
   ];
 
   return (
-    <article className={styles.vorstand}>
+    <article className="vorstand">
       <h3>Vorstand</h3>
       <Image
         image={VorstandSmall}
