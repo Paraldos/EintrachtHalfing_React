@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "./Logo/Logo";
 import Mitmachen from "./Mitmachen/Mitmachen";
 import Vorstand from "./Vorstand/Vorstand";

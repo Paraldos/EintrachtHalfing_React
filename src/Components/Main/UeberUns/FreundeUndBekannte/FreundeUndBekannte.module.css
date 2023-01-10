@@ -22,7 +22,7 @@
 }
 
 .FreundeUndBekannte ul li:hover {
-  transform: translateY(2%);
+  transform: scale(105%);
 }
 
 .FreundeUndBekannte ul a {

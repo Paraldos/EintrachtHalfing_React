@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import "./App.css";
 
 import Navbar from "./Components/Navbar/Navbar";
@@ -9,15 +9,17 @@ import Sportliches from "./Components/Main/Sportliches/Sportliches";
 import Impressum from "./Components/Main/Impressum/Impressum";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("Landing");
+
   return (
     <div>
-      <Navbar />
+      <Navbar setPage={setCurrentPage} />
       <main>
-        <Landing />
-        <UeberUns />
-        <Aktuelles />
-        <Sportliches />
-        <Impressum />
+        {currentPage == "Landing" && <Landing />}
+        {currentPage == "UeberUns" && <UeberUns />}
+        {currentPage == "Aktuelles" && <Aktuelles />}
+        {currentPage == "Sportliches" && <Sportliches />}
+        {currentPage == "Impressum" && <Impressum />}
       </main>
     </div>
   );

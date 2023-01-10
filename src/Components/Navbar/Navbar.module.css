@@ -1,0 +1,130 @@
+/* ============================ Navbar */
+/* basics */
+.nav {
+  z-index: 2;
+  background: var(--c1);
+  opacity: 0.98;
+  border-bottom: var(--navbar_border) solid var(--c3);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* position */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar_height);
+}
+
+/* ============================ button */
+.nav button {
+  background: none;
+  border: none;
+}
+
+/* ============================ nav__logo */
+.nav__logo {
+  color: var(--c3);
+  height: 100%;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__logo:hover {
+  color: var(--c4);
+  transform: translateY(3%);
+}
+
+/* ============================ ul */
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  list-style: none;
+}
+
+.nav__ul li {
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.nav__ul button {
+  color: var(--c3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__ul button:hover {
+  color: var(--c4);
+  transform: translateY(3%);
+}
+
+@media (max-width: 1250px) {
+  .nav__ul {
+    position: absolute;
+    top: var(--navbar_height);
+    left: -100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--c2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav__open .nav__ul {
+    left: -00%;
+  }
+
+  .nav__ul li {
+    margin: auto;
+    width: 80%;
+    height: 3rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.045);
+  }
+
+  .nav__ul li:last-child {
+    border: none;
+  }
+}
+
+/* ============================ nav__menuBtn */
+.nav__menuBtn {
+  height: calc(var(--navbar_height) - var(--navbar_border));
+  width: calc(var(--navbar_height) * 2);
+  cursor: pointer;
+  justify-content: center;
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .nav__menuBtn {
+    display: flex;
+  }
+
+  .nav__open .nav__menuBtn i {
+    transform: rotate(0) scale(0.8, 0.8);
+  }
+
+  .nav__menuBtn i {
+    color: var(--c3);
+    font-size: 2rem;
+    align-self: center;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(180deg);
+  }
+
+  .nav__menuBtn:hover i {
+    color: var(--c4);
+  }
+}

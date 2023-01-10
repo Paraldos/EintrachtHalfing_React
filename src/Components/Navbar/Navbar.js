@@ -1,32 +1,43 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar({ setPage }) {
   const [isActive, setIsActive] = useState(false);
 
-  const onClickHandler = () => setIsActive(!isActive);
+  const onClick_MenuBtn_Handler = () => setIsActive(!isActive);
+  const onClick_link_Handler = (event) => {
+    setPage(event.target.attributes.targetpage.value);
+    setIsActive(false);
+    window.scrollTo(0, 0);
+  };
+
+  const NavItem = ({ txt, targetpage }) => {
+    return (
+      <li>
+        <button onClick={onClick_link_Handler} targetpage={targetpage}>
+          {txt}
+        </button>
+      </li>
+    );
+  };
 
   return (
-    <nav className={isActive ? "Nav__Open" : ""}>
-      <button className="nav__menuBtn" onClick={onClickHandler}>
+    <nav className={`${styles.nav} ${isActive ? styles.nav__open : ""}`}>
+      <button className={styles.nav__menuBtn} onClick={onClick_MenuBtn_Handler}>
         <i className="fa-regular fa-circle-right"></i>
       </button>
-      <a href="#" className="nav__logo">
+      <button
+        className={styles.nav__logo}
+        onClick={onClick_link_Handler}
+        targetpage="Landing"
+      >
         SG Eintracht Halfing E.V.
-      </a>
-      <ul className="nav__ul">
-        <li>
-          <button>Über Uns</button>
-        </li>
-        <li>
-          <button>Aktuelles</button>
-        </li>
-        <li>
-          <button>Sportliches</button>
-        </li>
-        <li>
-          <button>Impressum</button>
-        </li>
+      </button>
+      <ul className={styles.nav__ul}>
+        <NavItem targetpage="UeberUns" txt="Über Uns" />
+        <NavItem targetpage="Aktuelles" txt="Aktuelles" />
+        <NavItem targetpage="Sportliches" txt="Sportliches" />
+        <NavItem targetpage="Impressum" txt="Impressum" />
       </ul>
     </nav>
   );

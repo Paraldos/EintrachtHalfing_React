@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Impressum.module.css";
 
 export default function () {
@@ -62,7 +61,7 @@ export default function () {
         <p>Blumenweg 1</p>
         <p>83093 Bad Endorf</p>
         <p>
-          <b>E-Mail:</b>{" "}
+          <b>E-Mail:</b>
           <a href="mailto:hillbrecht.s@gmail.com">hillbrecht.s@gmail.com</a>
         </p>
       </article>

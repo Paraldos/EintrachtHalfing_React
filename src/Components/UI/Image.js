@@ -1,11 +1,11 @@
 import React from "react";
-import "./Image.css";
+import styles from "./Image.module.css";
 
-export default function ({ image, description, visible = false }) {
+export default function ({ image, description, alt = "" }) {
   return (
-    <div className="image">
-      <img src={image} alt={description}></img>
-      <p>{description}</p>
+    <div className={styles.image}>
+      <img src={image} alt={alt != "" ? alt : description}></img>
+      {description != "" && <p>{description}</p>}
     </div>
   );
 }
