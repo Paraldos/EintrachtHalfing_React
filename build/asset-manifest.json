@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/EintrachtHalfing_React/static/css/main.69365fda.css",
+    "main.js": "/EintrachtHalfing_React/static/js/main.0b575aba.js",
+    "static/media/PhotoHalfing.jpg": "/EintrachtHalfing_React/static/media/PhotoHalfing.f6fa7d89b8611af205fa.jpg",
+    "static/media/VorstandSmall.jpg": "/EintrachtHalfing_React/static/media/VorstandSmall.de6376baa4e48d64e970.jpg",
+    "static/media/VereinsfotoSmall.jpg": "/EintrachtHalfing_React/static/media/VereinsfotoSmall.de3ae0e60ea37eb8a842.jpg",
+    "static/media/Logo.png": "/EintrachtHalfing_React/static/media/Logo.b568071e56bb44b45cd7.png",
+    "static/media/wanderpokal_small.jpg": "/EintrachtHalfing_React/static/media/wanderpokal_small.3cf1b2316f0c193dc9b5.jpg",
+    "static/media/PhotoHalfingSmall.jpg": "/EintrachtHalfing_React/static/media/PhotoHalfingSmall.9f59a4ed231d68d9eea1.jpg",
+    "static/media/Logo_JungschuetzenEggstaett.png": "/EintrachtHalfing_React/static/media/Logo_JungschuetzenEggstaett.9cf5a04d2ccf1edffd3c.png",
+    "static/media/Logo_Halfing.png": "/EintrachtHalfing_React/static/media/Logo_Halfing.df7c55c74aabe81cb9a6.png",
+    "static/media/Ergebnis01.jpeg": "/EintrachtHalfing_React/static/media/Ergebnis01.2903ff1dd3f7e64b9015.jpeg",
+    "static/media/Ergebnis03.jpeg": "/EintrachtHalfing_React/static/media/Ergebnis03.41219f547bd8c3b58f7f.jpeg",
+    "static/media/Ergebnis02.jpeg": "/EintrachtHalfing_React/static/media/Ergebnis02.6a8ed1ac4aaaacee62f1.jpeg",
+    "static/media/Logo_GauChimgau.png": "/EintrachtHalfing_React/static/media/Logo_GauChimgau.c8ffe18f89f2a0368f29.png",
+    "index.html": "/EintrachtHalfing_React/index.html",
+    "main.69365fda.css.map": "/EintrachtHalfing_React/static/css/main.69365fda.css.map",
+    "main.0b575aba.js.map": "/EintrachtHalfing_React/static/js/main.0b575aba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69365fda.css",
+    "static/js/main.0b575aba.js"
+  ]
+}
