@@ -1,8 +1,0 @@
-.impressum p {
-  padding: 0;
-  padding-left: 1rem;
-}
-
-.impressum a:hover {
-  color: var(--navbar_darkBg);
-}
